@@ -1,0 +1,1 @@
+created an ETL straming pipeline to clean transform and store final workout activity in databricks lakehouse for further analysis. The pipeline uses a medalian architecture to transform data and kafka to create near real time data pilepline with microbatch processing. 
