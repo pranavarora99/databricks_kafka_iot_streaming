@@ -15,7 +15,7 @@ class HistoryLoader():
         print(f"Loading date_lookup table...", end='')        
         spark.sql(f"""INSERT OVERWRITE TABLE {self.catalog}.{self.db_name}.date_lookup 
                 SELECT date, week, year, month, dayofweek, dayofmonth, dayofyear, week_part 
-                FROM json.`{self.test_data_dir}/6-date-lookup.json/`""")
+                FROM json.`{self.test_data_dir}/date-lookup.json/`""")
         print("Done")
         
     def load_history(self):
